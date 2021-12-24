@@ -15,6 +15,12 @@ function Navbar() {
                         <li className="nav-item">
                             <Link className="nav-link active text-white" aria-current="page" to="/appointmentbook">Book Appointment</Link>
                         </li>
+                        <li className="nav-item">
+                            <Link className="nav-link active text-white" aria-current="page" to="/vaccine">Vaccination</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link active text-white" aria-current="page" to="/aboutus">About Us</Link>
+                        </li>
                     </ul>
                 </div>
             </div>

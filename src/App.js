@@ -2,6 +2,8 @@ import './App.css';
 import Navbar from './MyComponents/Navbar';
 import Home from './MyComponents/Home';
 import AppointmentBook from './MyComponents/AppointmentBook';
+import AboutUs from './MyComponents/AboutUs';
+import Vaccine from './MyComponents/Vaccine';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
@@ -22,6 +24,22 @@ function App() {
             return (
               <>
                 <AppointmentBook />
+              </>
+            )
+          }}>
+          </Route>
+          <Route exact path="/aboutus" render={() => {
+            return (
+              <>
+                <AboutUs />
+              </>
+            )
+          }}>
+          </Route>
+          <Route exact path="/vaccine" render={() => {
+            return (
+              <>
+                <Vaccine />
               </>
             )
           }}>
