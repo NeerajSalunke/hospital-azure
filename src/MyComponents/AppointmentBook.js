@@ -11,7 +11,7 @@ function AppointmentBook() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
 
-  const btn = document.getElementById('submit');
+  // const btn = document.getElementById('submit');
   const form = useRef();
 
   const publicClientApplication = new PublicClientApplication({
@@ -53,10 +53,10 @@ function AppointmentBook() {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    btn.value = "Booking...";
+    // btn.innerHTML = "Booking...";
     emailjs.sendForm('contact_service', 'contact_form', form.current, 'user_kshYWY0DFRlLW7n4LBDdi')
       .then((result) => {
-        btn.value = "Book";
+        // btn.innerHTML = "Book";
         alert("Appointment Booked. Check Your Mail For Confirmation")
         console.log(result.text);
       }, (error) => {
@@ -75,6 +75,15 @@ function AppointmentBook() {
   var min = year + "-" + month + "-" + minDate + "T" + "00:00";
   var max = year + "-" + month + "-" + maxDate + "T" + "00:00";
   console.log(date, min, max)
+
+  let firstStyle = {
+    color: "white",
+    textAlign: "center",
+    paddingTop: "40px",
+    paddingBottom:"20px",
+    fontSize: "40px",
+    fontStyle: "Bold",
+}
 
   return (
     <>
@@ -151,12 +160,15 @@ function AppointmentBook() {
               <input type="radio" id="html" name="doc_name" value="Vihaan Basu" />
               <label>Vihaan Basu</label>
             </div>
-            <input className='formDetails' id='submit' type="submit" value="Book" />
+            {/* <input className='formDetails' id='submit' type="submit" value="Book" /> */}
+            <div style={firstStyle}>
+              <button className='btn btn-primary btn-lg' id='submit' type="submit" value="Book" >Book</button>
+            </div>
           </form>
         </> :
-        <div>
-          <p style={{ color: "white" }}>Please Login</p>
-          <button onClick={() => login()}>Login</button>
+        <div style={firstStyle}>
+          <p>Please Login To Book Appointment <br/> Use Your Personal Microsoft Account Only</p>
+          <button onClick={() => login()} type="button" className="btn btn-primary btn-lg">Login</button>
         </div>
       }
     </>
