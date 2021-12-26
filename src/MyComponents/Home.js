@@ -56,11 +56,11 @@ return (
         <div style={fourthStyle}>
             Consult Topmost Doctors with Years of expertise and training<br/>
             <Link to="/appointmentbook">
-                <button type="button" class="btn btn-primary btn-lg">Book Appointment</button>
+                <button type="button" className="btn btn-primary btn-lg">Book Appointment</button>
             </Link><br/>
             Get all Information about Covid-19 Vaccination<br/>
             <Link to="/vaccine">
-                <button type="button" class="btn btn-primary btn-lg">Vaccination</button>
+                <button type="button" className="btn btn-primary btn-lg">Vaccination</button>
             </Link>
         </div>
     </div>

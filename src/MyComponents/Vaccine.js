@@ -60,7 +60,7 @@ function Vaccine() {
             </div>
             <div style={{textAlign:"center"}}> 
                 <a href="https://selfregistration.cowin.gov.in/" target="_blank">
-                    <button type="button" class="btn btn-primary btn-lg">Register Here</button>
+                    <button type="button" className="btn btn-primary btn-lg">Register Here</button>
                 </a> 
             </div> 
             <div style={{fontSize:"30px",fontStyle:"bold",color:"white",textAlign:"center"}}>
