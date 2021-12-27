@@ -9,6 +9,8 @@ Azure Services used in this project:
 - Web apps
 - Azure AD
 - Azure Storage
+- Azure QnA maker
+- Azure Web App Bot
 
 Frameworks and Technologies used:
 - ReactJS
