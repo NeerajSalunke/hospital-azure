@@ -1,4 +1,4 @@
-# Hospital Website
+# Hospital Website Using Azure
 
 Hospital Website is designed in a way where a user or patient can:
 - Get info about Hospital
