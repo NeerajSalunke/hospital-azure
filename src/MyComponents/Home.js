@@ -42,6 +42,16 @@ let fifthStyle = {
     margin:"10px auto"
 }
 
+let sixthStyle = {
+    // position:"fixed",
+    // right:"4px",
+    display:"flex",
+    alignItems:"center",
+    justifyContent:"center",
+    height:"500px",
+    width:"100%"
+}
+
 return (
     <div>
         <img style={firstStyle} src={pic} alt="hospital" id="hospPic" />
@@ -62,6 +72,9 @@ return (
             <Link to="/vaccine">
                 <button type="button" className="btn btn-primary btn-lg">Vaccination</button>
             </Link>
+        </div>
+        <div style={sixthStyle}>
+            <iframe style={{height:"300px",width:"600px"}} src='https://webchat.botframework.com/embed/hospitalbot-bot?s=oRMRI8UDrf4.Vjjk4HX98KJLCMpMeVqQ43b2soQ_eCy70J5hSlg-Rb8'></iframe>
         </div>
     </div>
 );
