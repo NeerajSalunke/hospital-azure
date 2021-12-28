@@ -29,12 +29,16 @@ body {
     display:block;
     padding:8px;
     margin:10px auto;/*"auto" is used to bring input and textarea in center horizontally*/
-    width: 60%;
+    width: 25%;
     border:none;
     border-radius: 20px;
     /* border:black; */
     background-color: white;
     color:black;
+}
+
+.formDetailsInstruction{
+  color:white;
 }
 
 #submit:hover{
