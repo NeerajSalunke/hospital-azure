@@ -7,6 +7,7 @@ Hospital Website is designed in a way where a user or patient can:
 
 Azure Services used in this project:
 - Web apps
+- Azure App Service
 - Azure AD
 - Azure Storage
 - Azure QnA maker

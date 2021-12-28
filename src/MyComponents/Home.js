@@ -45,7 +45,11 @@ let fifthStyle = {
 let sixthStyle = {
     // position:"fixed",
     // right:"4px",
+    color:"white",
+    fontSize:"30px",
+    fontStyle:"bold",
     display:"flex",
+    flexDirection:"column",
     alignItems:"center",
     justifyContent:"center",
     height:"500px",
@@ -74,7 +78,9 @@ return (
             </Link>
         </div>
         <div style={sixthStyle}>
-            <iframe style={{height:"300px",width:"600px"}} src='https://webchat.botframework.com/embed/hospitalbot-bot?s=oRMRI8UDrf4.Vjjk4HX98KJLCMpMeVqQ43b2soQ_eCy70J5hSlg-Rb8'></iframe>
+            <p>Interact With Our ChatBot To Get Answer To Your Queries</p>
+            <p>You May Ask General Covid-19 Questions. It's More Than A Personal Doctor!</p>
+            <iframe style={{height:"300px",width:"600px",border:"4px solid #0c6efd",borderRadius:"15px"}} src='https://webchat.botframework.com/embed/hospitalbot-bot?s=oRMRI8UDrf4.Vjjk4HX98KJLCMpMeVqQ43b2soQ_eCy70J5hSlg-Rb8'></iframe>
         </div>
     </div>
 );
