@@ -38,7 +38,11 @@ body {
 }
 
 .formDetailsInstruction{
+  display: block;
+  margin:10px auto;
+  width:25%;
   color:white;
+  /* text-align: center; */
 }
 
 #submit:hover{
